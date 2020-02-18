@@ -11,3 +11,4 @@ app.listen(3000, function () {
   console.log('Example app listening on port 3000!');
 });
 //git push -u origin master
+//cmdkey /delete:LegacyGeneric:target=git:https://github.com
