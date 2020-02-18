@@ -1,5 +1,6 @@
-var express = require('express');
+//var express = require('express');
 var app = express();
+import express from 'express'
 
 app.get('/api', function (req, res) {
   let nombre = "julian"
