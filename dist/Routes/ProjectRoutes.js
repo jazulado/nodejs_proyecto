@@ -12,6 +12,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var router = _express2.default.Router();
 
-router.get('/', _ProjectController2.default.home);
+router.get('/home', _ProjectController2.default.home);
+router.get('/cesde', _ProjectController2.default.cesde);
 
 module.exports = router;

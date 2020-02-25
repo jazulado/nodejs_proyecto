@@ -1,7 +1,7 @@
 let controller = {
     home: (req, res) => {
         return res.send({
-            message: "Welcome to home"
+            message: "Welcome to homeeee"
         })
     },
     cesde: (req, res) => {
