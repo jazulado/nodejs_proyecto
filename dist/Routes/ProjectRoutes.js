@@ -14,5 +14,7 @@ var router = _express2.default.Router();
 
 router.get('/home', _ProjectController2.default.home);
 router.get('/cesde', _ProjectController2.default.cesde);
+router.post('/alumnos', _ProjectController2.default.alumnos);
+router.post('/formulario', _ProjectController2.default.formulario);
 
 module.exports = router;
