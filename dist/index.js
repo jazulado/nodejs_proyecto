@@ -25,6 +25,3 @@ _mongoose2.default.connect("mongodb://localhost:27017/cursos", { useNewUrlParser
     console.log('App error ' + error);
   });
 });
-
-//git push -u origin master
-//cmdkey /delete:LegacyGeneric:target=git:https://github.com

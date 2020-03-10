@@ -4,4 +4,5 @@ import router from './Routes/ProjectRoutes'
 let app = express()
 app.use(express.urlencoded({extended:false}))
 app.use('/api', router)
+app.use('/momentouno', router)
 module.exports = app

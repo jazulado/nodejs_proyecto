@@ -16,5 +16,7 @@ router.get('/home', _ProjectController2.default.home);
 router.get('/cesde', _ProjectController2.default.cesde);
 router.post('/alumnos', _ProjectController2.default.alumnos);
 router.post('/formulario', _ProjectController2.default.formulario);
+router.post('/producto', _ProjectController2.default.producto);
+router.post('/usuario', _ProjectController2.default.usuario);
 
 module.exports = router;

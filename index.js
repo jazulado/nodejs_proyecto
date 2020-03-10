@@ -14,6 +14,3 @@ mongoose.connect("mongodb://localhost:27017/cursos",{useNewUrlParser: true, useU
   });
 })
 
-
-//git push -u origin master
-//cmdkey /delete:LegacyGeneric:target=git:https://github.com
