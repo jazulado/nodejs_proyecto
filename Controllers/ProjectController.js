@@ -78,7 +78,7 @@ let controller = {
         }
         else{
             return res.send({
-                login: "sucess"
+                login: "success"
             })
         }
         
