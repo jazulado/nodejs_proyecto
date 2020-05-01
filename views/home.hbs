@@ -1,8 +1,42 @@
-<h1>Soy la Home</h1>
-<h2>{{name}}</h2>
-<h2>{{lastname}}</h2>
-<ol>
-    {{#each people}}
-        <li>{{this}}</li>
-    {{/each}}
-</ol>
+
+<div class="jumbotron">
+    <p class="lead">CRUD hecho en python y MongoDB con las librerias de flask y pymongo</p>
+    <hr class="my-4">
+    
+    <p>Visita el repositorio en github! <a href="https://github.com/julian4u0/citas_medicas"><i class="im im-github"></i><span style="font-size:25px">/julian4u0</span></a></p>
+</div>
+<div style="overflow-x:auto;">
+    <table>
+        <tr>
+            <th>Nombres</th>
+            <th>Apellidos</th>
+            <th>Documento</th>
+            <th>Fecha de nacimiento</th>
+            <th>Ciudad</th>
+            <th>Barrio</th>
+            <th>Celular</th>
+            <th>Acciones</th>
+        </tr>
+
+
+        {{#each params}}
+
+
+        <tr>
+            <td>{{patientName}}</td>
+            <td>{{patientLastname}}</td>
+            <td>{{patientDocId}}</td>
+            <td>{{patientBornDate}}</td>
+            <td>{{patientCity}}</td>
+            <td>{{patientDistrict}}</td>
+            <td>{{patientPhone}}</td>
+            <td><a href="url"><i class="im im-x-mark"></i></a> <a href="url"><i class="im im-edit"></i></a>
+            </td>
+        </tr>
+        {{/each}}
+
+
+
+
+    </table>
+</div>
