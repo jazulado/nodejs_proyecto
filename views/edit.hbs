@@ -1,50 +1,56 @@
-<form method="POST" action="/medapp/createpatient" id="formulario">
-
+<form method="POST" action="/medapp/editpatient" id="formulario">
+  <input type="hidden" value="{{_id}}" name="patientId" />
   <div class="form-group">
     <label for="patientName">Nombre</label>
-    <input type="text" class="form-control" name="patientName" id="patientName" aria-describedby="emailHelp">
+    <input type="text" class="form-control" name="patientName" value="{{patientName}}" id="patientName"
+      aria-describedby="emailHelp">
 
   </div>
 
   <div class="form-group">
     <label for="patientLastname">Apellido</label>
-    <input type="text" class="form-control" name="patientLastname" id="patientLastname" aria-describedby="emailHelp"
-      required>
+    <input type="text" class="form-control" name="patientLastname" value="{{patientLastname}}" id="patientLastname"
+      aria-describedby="emailHelp" required>
   </div>
 
   <div class="form-group">
     <label for="patientDocId">Documento</label>
-    <input type="number" class="form-control" name="patientDocId" id="patientDocId" aria-describedby="emailHelp"
-      required>
+    <input type="number" class="form-control" name="patientDocId" value="{{patientDocId}}" id="patientDocId"
+      aria-describedby="emailHelp" required>
   </div>
 
   <div class="form-group">
     <label for="patientBornDate">Fecha de nacimiento DDMMAAAA</label>
-    <input type="number" class="form-control" name="patientBornDate" id="patientBornDate" aria-describedby="emailHelp"
-      required>
+    <input type="number" class="form-control" name="patientBornDate" value="{{patientBornDate}}" id="patientBornDate"
+      aria-describedby="emailHelp" required>
   </div>
 
 
   <div class="form-group">
     <label for="patientCity">Ciudad</label>
-    <input type="text" class="form-control" name="patientCity" id="patientCity" aria-describedby="emailHelp" required>
+    <input type="text" class="form-control" name="patientCity" id="patientCity" value="{{patientCity}}"
+      aria-describedby="emailHelp" required>
   </div>
 
   <div class="form-group">
     <label for="patientDistrict">Barrio</label>
-    <input type="text" class="form-control" name="patientDistrict" id="patientDistrict" aria-describedby="emailHelp"
-      required>
+    <input type="text" class="form-control" name="patientDistrict" id="patientDistrict" value="{{patientDistrict}}"
+      aria-describedby="emailHelp" required>
   </div>
 
   <div class="form-group">
     <label for="patientPhone">Celular</label>
-    <input type="number" class="form-control" name="patientPhone" id="patientPhone" minlength="9" id="patientPhone"
-      required>
+    <input type="number" class="form-control" name="patientPhone" id="patientPhone" value="{{patientPhone}}"
+      id="patientPhone" required>
 
   </div>
   <p id="alerta" style="color: red;font-size: large;"></p>
 
-  <p class="btn btn-primary" onclick="formSubmit()">Submit</p>
+  <p class="btn btn-primary" onclick="formSubmit()">Guardar Cambios</p>
+
+
+
+
 </form>
 
 <script>
@@ -70,5 +76,4 @@
     }
   } 
 </script>
-
 <br>
